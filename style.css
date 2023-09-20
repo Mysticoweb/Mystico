@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de)
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover, 
+header ul li a.active
+{
+    background: #fff;
+    color:#2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    padding: 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+    pointer-events: none;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    right: -150px; /* Adjust position for smaller screens */
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5vw; /* Adjust font size for smaller screens */
+    z-index: 9;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b1055;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+    .footer {
+        background-color: 	#356388 rgb(53,99,136); /* Footer background color */
+        color: #000000; /* Text color */
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .opener {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .social-icons {
+        margin-bottom: 20px;
+    }
+    
+    .social-icon {
+        font-size: 24px;
+        margin: 0 10px;
+        color: #000000; /* Social icon color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        color: #007BFF; /* Hover color for social icons */
+    }
+    p {
+        margin: 0;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%; /* Adjust max-width for smaller screens */
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+    
+    .container .card {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Center cards on smaller screens */
+    }    
+    .container .card .content
+    {
+        padding: 20px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .container .card:hover .content
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .container .card .content h2
+    {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(255,255,255,0.05);
+        pointer-events: none;
+    }
+    .container .card .content h3
+    {
+      font-size: 1.8em;
+      color: #000;
+      z-index: 1;    
+    }
+    .container .card .content h1
+    {
+        font-size: 1.8em;
+      color: #013220 ;
+      z-index: 1;
+    }
+    .container .card .content p
+    {
+      font-size: 0.8em;
+      color: #000000;
+      font-weight: 300;
+    }
+    .container .card .content a
+    {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background: #fff;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    

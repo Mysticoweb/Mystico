@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystico</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="media/Logo-removebg-preview.png" image="media/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#h2">Services</a></li>
+            <li><a href="thirdpage.html">Work</a></li>
+            <li><a href="secondpage.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="media/stars.png" id="stars">
+        <img src="media/moon.png" id="moon">
+        <img src="media/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Welcome</h2>
+        <img src="media/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="container">
+    <div class="card">
+    <div class="content">
+        <h2>01</h2>
+        <h3>WEB DEVELOPMENT</h3>
+        <p>Welcome to our web development project! We specialize in crafting stunning and responsive websites tailored to your unique needs. 
+         *-Our team of experienced developers combines cutting-edge technology with creative design to bring your ideas to life. 
+         Whether you need a simple site or a complex web application, we're here to make your online presence shine.</p>
+         <a href="#">Read More</a>
+         </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>WEB MANAGEMENT</h3>
+                <p>Welcome to our Web Management services! We specialize in ensuring your online presence runs smoothly. From website updates, security, and performance optimization to content management and SEO, we've got you covered. Let us handle the technical aspects, so you can focus on growing your business.</p>
+                 <a href="#">Read More</a>
+                 </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h1>Shopify</h1>
+                        <p>She needed glasses.
+                         It wasn't that she couldn't see without them, 
+                         but what she could see with them. When she wore glasses,
+                         her eyes focused so deeply that she could see not only the physical but also beyond.
+                         It was like a superpower.</p>
+                         <a href="#">Read More</a>
+                         </div>
+                        </div>
+                    </div>
+    <script>
+        let stars= document.getElementById('stars')
+        let moon= document.getElementById('moon')
+        let mountains_behind= document.getElementById('mountains_behind')
+        let text= document.getElementById('text')
+        let btn= document.getElementById('btn')
+        let mountains_front= document.getElementById('mountains_front')
+        let logo= document.querySelector('header')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight= value * 4 + 'px';
+            text.style.marginLeft= value * 0.5 + 'px';
+            btn.style.marginTop= value * 1.5 + 'px';
+            header.style.Top= value * 0.5 + 'px';
+        })
+    </script>
+
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-white-500 rounded-full" viewBox="0 0 24 24">
+         <a href="media/Logo-removebg-preview.png" ></a>
+        </svg>
+        <span class="ml-3 text-xl">M Y S T I C O</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 M Y S T I C O —
+        <a href="https://instagram.com/mystico.web" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@mystico_web</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
